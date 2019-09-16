@@ -284,6 +284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.05
+  isCatModeActive: 0
+  catModeDuration: 3
 --- !u!50 &229182583
 Rigidbody2D:
   serializedVersion: 4
@@ -464,16 +466,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2835262171328050023, guid: 6f84858c1c9c22c4daa01b741de29f1c,
-        type: 3}
-      propertyPath: closeenough
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 397605686390038774, guid: 6f84858c1c9c22c4daa01b741de29f1c,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4165265381326338782, guid: 6f84858c1c9c22c4daa01b741de29f1c,
         type: 3}
       propertyPath: m_Name
@@ -534,6 +526,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2835262171328050023, guid: 6f84858c1c9c22c4daa01b741de29f1c,
+        type: 3}
+      propertyPath: closeenough
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 397605686390038774, guid: 6f84858c1c9c22c4daa01b741de29f1c,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8945081661439960048, guid: 6f84858c1c9c22c4daa01b741de29f1c,
         type: 3}
       propertyPath: m_FlipY
@@ -544,8 +546,31 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5075016345464438111, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
+    - {fileID: 2835262171328050023, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
+--- !u!1 &1539470777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4165265381326338782, guid: 6f84858c1c9c22c4daa01b741de29f1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1539470776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1539470778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539470777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9104721f3018f2c4b881a9dfd2fcd210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targettag: Player
+  speed: 0.01
+  isCaught: 0
 --- !u!1 &1753123352
 GameObject:
   m_ObjectHideFlags: 0
