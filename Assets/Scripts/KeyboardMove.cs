@@ -4,12 +4,14 @@ using System.Collections;
 // This script uses keyboard events to move the object.
 public class KeyboardMove : MonoBehaviour
 {
-
+    public Sprite Cathead;
+    public Sprite Player;
     public float speed = 0.05f;
     public bool isCatModeActive = false;
     public float catModeDuration = 3.0f;
     Rigidbody2D rb;
     float timer;
+    float catHeadStart;
     bool isAbilityUsed = false;
 
     // Use this for initialization
@@ -22,6 +24,7 @@ public class KeyboardMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        catHeadStart += Time.deltaTime;
 
         // Amount to move in each dimension
         float dx = 0;
@@ -54,8 +57,9 @@ public class KeyboardMove : MonoBehaviour
         // Move by that amount
         rb.position += new Vector2(dx, dy);
 
-        if (Input.GetKeyDown("space") && !isAbilityUsed)
+        if (Input.GetKeyDown("space") && !isAbilityUsed && catHeadStart > 3.0f)
         {
+            GetComponent<SpriteRenderer>().sprite = Cathead;
             isAbilityUsed = true;
             isCatModeActive = true;
         }
@@ -66,6 +70,7 @@ public class KeyboardMove : MonoBehaviour
         if (timer > catModeDuration)
         {
             isCatModeActive = false;
+            GetComponent<SpriteRenderer>().sprite = Player;
         }
     }
 }

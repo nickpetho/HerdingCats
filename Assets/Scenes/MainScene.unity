@@ -187,7 +187,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2835262171328050023, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
 --- !u!1 &229182579
 GameObject:
@@ -283,6 +284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f57e5618041f03469d0c1cf3dead445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cathead: {fileID: 21300000, guid: 29765b7766532244da248544badbfe95, type: 3}
+  Player: {fileID: 21300000, guid: 722cbe2c97c4dba45ac68a332c1a156c, type: 3}
   speed: 0.05
   isCatModeActive: 0
   catModeDuration: 3
@@ -457,7 +460,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2835262171328050023, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
 --- !u!1001 &1539470776
 PrefabInstance:
@@ -547,30 +551,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5075016345464438111, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
+    - {fileID: 0}
     - {fileID: 2835262171328050023, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f84858c1c9c22c4daa01b741de29f1c, type: 3}
---- !u!1 &1539470777 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4165265381326338782, guid: 6f84858c1c9c22c4daa01b741de29f1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1539470776}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1539470778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539470777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9104721f3018f2c4b881a9dfd2fcd210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targettag: Player
-  speed: 0.01
-  isCaught: 0
 --- !u!1 &1753123352
 GameObject:
   m_ObjectHideFlags: 0
