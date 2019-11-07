@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 // This script uses keyboard events to move the object.
 public class KeyboardMove : MonoBehaviour
